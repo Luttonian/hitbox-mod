@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hitboxmod",
+	"version": "${version}",
+	"name": "Hitbox Mod",
+	"description": "Official mod for the Hitbox SMP!",
+	"authors": [
+		"Lutto!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hitboxmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lutto.hitboxmod.HitboxMod"
+		],
+		"client": [
+			"net.lutto.hitboxmod.HitboxModClient"
+		],
+		"fabric-datagen": [
+			"net.lutto.hitboxmod.HitboxModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hitboxmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
